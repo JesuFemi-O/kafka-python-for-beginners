@@ -17,14 +17,18 @@ for linux/mac user's [this video](https://www.youtube.com/watch?v=jY5fzVCkABg&li
     cd c:/kafka (replace with your own path)
 ~~~
 
-- start apache zookeper (windows command)
+- start apache zookeper 
 ~~~
-    .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+    .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties (windows command)
+
+    bin/zookeeper-server-start.sh config/zookeeper.properties   (Ubuntu command)
 ~~~
 
 - start apache kafka server in another  terminal
 ~~~
-    .\bin\windows\kafka-server-start.bat .\config\server.properties
+    .\bin\windows\kafka-server-start.bat .\config\server.properties  (windows command)
+
+    bin/kafka-server-start.sh config/server.properties  (Ubuntu command)
 ~~~
 
 
@@ -39,7 +43,9 @@ for linux/mac user's [this video](https://www.youtube.com/watch?v=jY5fzVCkABg&li
 
 - start virtual env
 ~~~
-    .\venv\scripts\activate
+    .\venv\scripts\activate  (windows command)
+    
+    source venv/bin/activate
 ~~~
 
 - install requirements
